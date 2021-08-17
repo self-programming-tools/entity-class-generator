@@ -43,6 +43,10 @@
             this.label1 = new System.Windows.Forms.Label();
             this.btnGetDBObjectList = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.nameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Schema = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.typeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.isSelectDataGridViewCheckBoxColumn = new System.Windows.Forms.DataGridViewCheckBoxColumn();
             this.dataSetList = new System.Data.DataSet();
             this.dtList = new System.Data.DataTable();
             this.dataColumn1 = new System.Data.DataColumn();
@@ -50,10 +54,6 @@
             this.dataColumn3 = new System.Data.DataColumn();
             this.dataColumn4 = new System.Data.DataColumn();
             this.btnGenerateDataModel = new System.Windows.Forms.Button();
-            this.nameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Schema = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.typeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.isSelectDataGridViewCheckBoxColumn = new System.Windows.Forms.DataGridViewCheckBoxColumn();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -211,6 +211,40 @@
             this.dataGridView1.Size = new System.Drawing.Size(864, 373);
             this.dataGridView1.TabIndex = 0;
             // 
+            // nameDataGridViewTextBoxColumn
+            // 
+            this.nameDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.nameDataGridViewTextBoxColumn.DataPropertyName = "Name";
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Calibri", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.nameDataGridViewTextBoxColumn.DefaultCellStyle = dataGridViewCellStyle1;
+            this.nameDataGridViewTextBoxColumn.HeaderText = "name";
+            this.nameDataGridViewTextBoxColumn.Name = "nameDataGridViewTextBoxColumn";
+            this.nameDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // Schema
+            // 
+            this.Schema.DataPropertyName = "Schema";
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Calibri", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Schema.DefaultCellStyle = dataGridViewCellStyle2;
+            this.Schema.HeaderText = "schema";
+            this.Schema.Name = "Schema";
+            this.Schema.ReadOnly = true;
+            // 
+            // typeDataGridViewTextBoxColumn
+            // 
+            this.typeDataGridViewTextBoxColumn.DataPropertyName = "Type";
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Calibri", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.typeDataGridViewTextBoxColumn.DefaultCellStyle = dataGridViewCellStyle3;
+            this.typeDataGridViewTextBoxColumn.HeaderText = "type";
+            this.typeDataGridViewTextBoxColumn.Name = "typeDataGridViewTextBoxColumn";
+            this.typeDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // isSelectDataGridViewCheckBoxColumn
+            // 
+            this.isSelectDataGridViewCheckBoxColumn.DataPropertyName = "IsSelect";
+            this.isSelectDataGridViewCheckBoxColumn.HeaderText = "       select";
+            this.isSelectDataGridViewCheckBoxColumn.Name = "isSelectDataGridViewCheckBoxColumn";
+            // 
             // dataSetList
             // 
             this.dataSetList.DataSetName = "ListDataSet";
@@ -255,45 +289,11 @@
             this.btnGenerateDataModel.UseVisualStyleBackColor = true;
             this.btnGenerateDataModel.Click += new System.EventHandler(this.btnGenerateDataModel_Click);
             // 
-            // nameDataGridViewTextBoxColumn
-            // 
-            this.nameDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.nameDataGridViewTextBoxColumn.DataPropertyName = "Name";
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Calibri", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.nameDataGridViewTextBoxColumn.DefaultCellStyle = dataGridViewCellStyle1;
-            this.nameDataGridViewTextBoxColumn.HeaderText = "name";
-            this.nameDataGridViewTextBoxColumn.Name = "nameDataGridViewTextBoxColumn";
-            this.nameDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // Schema
-            // 
-            this.Schema.DataPropertyName = "Schema";
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Calibri", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Schema.DefaultCellStyle = dataGridViewCellStyle2;
-            this.Schema.HeaderText = "schema";
-            this.Schema.Name = "Schema";
-            this.Schema.ReadOnly = true;
-            // 
-            // typeDataGridViewTextBoxColumn
-            // 
-            this.typeDataGridViewTextBoxColumn.DataPropertyName = "Type";
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Calibri", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.typeDataGridViewTextBoxColumn.DefaultCellStyle = dataGridViewCellStyle3;
-            this.typeDataGridViewTextBoxColumn.HeaderText = "type";
-            this.typeDataGridViewTextBoxColumn.Name = "typeDataGridViewTextBoxColumn";
-            this.typeDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // isSelectDataGridViewCheckBoxColumn
-            // 
-            this.isSelectDataGridViewCheckBoxColumn.DataPropertyName = "IsSelect";
-            this.isSelectDataGridViewCheckBoxColumn.HeaderText = "       select";
-            this.isSelectDataGridViewCheckBoxColumn.Name = "isSelectDataGridViewCheckBoxColumn";
-            // 
             // EntityModelGenerator
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.LightSlateGray;
+            this.BackColor = System.Drawing.SystemColors.Control;
             this.ClientSize = new System.Drawing.Size(927, 577);
             this.Controls.Add(this.btnGenerateDataModel);
             this.Controls.Add(this.groupBox3);
